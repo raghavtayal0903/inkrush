@@ -1,0 +1,191 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #0d0d0f;
+
+    color: #f4f4f5;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* =========================================
+   COMMON ELEMENTS
+========================================= */
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 72px;
+
+    padding: 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #0d0d0f;
+
+    border-bottom: 1px solid #242428;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    color: #f7f7f8;
+
+    text-decoration: none;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    line-height: 1;
+}
+
+.logo span {
+    color: #7952ed;
+}
+
+
+/* =========================================
+   NAVBAR RIGHT INFO
+========================================= */
+
+.nav-info {
+    color: #66666e;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 0.01em;
+}
+
+
+/* =========================================
+   FALLBACK NAV LINK
+   Keep this in case we use a Home link later
+========================================= */
+
+.home-link {
+    color: #85858e;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: color 0.15s ease;
+}
+
+.home-link:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+    background: #7952ed;
+    color: white;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d0d0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #303036;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #414148;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 64px;
+
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-info {
+        font-size: 10px;
+    }
+
+}

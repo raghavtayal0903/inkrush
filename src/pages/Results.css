@@ -1,0 +1,206 @@
+.results-page {
+    min-height: calc(100vh - 72px);
+    background: #0d0d0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 20px;
+    color: #f4f4f5;
+}
+
+.results-card {
+    width: 100%;
+    max-width: 720px;
+    background: #141417;
+    border: 1px solid #26262c;
+    border-radius: 14px;
+    padding: 32px;
+}
+
+.results-top {
+    margin-bottom: 28px;
+}
+
+.results-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #8d8d98;
+    margin-bottom: 10px;
+}
+
+.results-title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.results-room {
+    margin-top: 10px;
+    color: #9a9aa3;
+    font-size: 14px;
+}
+
+.results-room strong {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.winner-box {
+    background: #101014;
+    border: 1px solid #2a2a31;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 28px;
+}
+
+.winner-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #8e6cff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+.winner-name {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.winner-score {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #b2b2bb;
+    font-size: 15px;
+}
+
+.scoreboard {
+    border: 1px solid #26262c;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 26px;
+}
+
+.scoreboard-header {
+    display: grid;
+    grid-template-columns: 90px 1fr 100px;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #111114;
+    border-bottom: 1px solid #26262c;
+    color: #8f8f98;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.score-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 100px;
+    gap: 12px;
+    padding: 16px 18px;
+    border-bottom: 1px solid #222228;
+    align-items: center;
+    background: #141417;
+}
+
+.score-row:last-child {
+    border-bottom: none;
+}
+
+.winner-row {
+    background: #18161f;
+}
+
+.rank {
+    color: #9d9da6;
+    font-weight: 700;
+}
+
+.player-name {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.player-score {
+    color: #8e6cff;
+    font-weight: 800;
+    text-align: right;
+}
+
+.results-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.results-actions button {
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn {
+    border: none;
+    background: #7b56f0;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #6f49e6;
+}
+
+.secondary-btn {
+    border: 1px solid #34343a;
+    background: transparent;
+    color: #e7e7ea;
+}
+
+.secondary-btn:hover {
+    background: #1a1a1f;
+}
+
+.results-empty {
+    color: #a0a0aa;
+    font-size: 15px;
+    margin: 18px 0 24px;
+}
+
+@media (max-width: 640px) {
+    .results-card {
+        padding: 22px;
+    }
+
+    .results-title {
+        font-size: 28px;
+    }
+
+    .winner-name {
+        font-size: 22px;
+    }
+
+    .scoreboard-header,
+    .score-row {
+        grid-template-columns: 60px 1fr 80px;
+        font-size: 13px;
+    }
+
+    .results-actions {
+        justify-content: stretch;
+    }
+
+    .results-actions button {
+        width: 100%;
+    }
+}
